@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>MA_KLAVYE | Resmî İndirme Merkezi</title>
 
     <style>
@@ -12,84 +13,105 @@
 
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0b1020;
-            color: white;
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 20px;
+            background: #080d19;
+            color: white;
+            font-family: Arial, sans-serif;
         }
 
         .kart {
             width: 100%;
-            max-width: 650px;
+            max-width: 680px;
             padding: 45px 25px;
             text-align: center;
-            background: #151e33;
-            border: 1px solid #293958;
-            border-radius: 24px;
-            box-shadow: 0 15px 50px #0005;
+            background: #121d32;
+            border: 1px solid #2b3d5b;
+            border-radius: 25px;
+            box-shadow: 0 20px 60px #0008;
         }
 
         .logo {
-            width: 85px;
-            height: 85px;
-            margin: auto;
-            border-radius: 22px;
-            background: #18c878;
-            color: #071b12;
             display: flex;
-            justify-content: center;
             align-items: center;
-            font-size: 30px;
+            justify-content: center;
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 20px;
+            border-radius: 24px;
+            background: #18d681;
+            color: #071b12;
+            font-size: 32px;
             font-weight: bold;
         }
 
         h1 {
-            font-size: 35px;
             margin-bottom: 10px;
+            font-size: 38px;
         }
 
         .aciklama {
             color: #bdc9df;
-            line-height: 1.7;
+            line-height: 1.8;
+        }
+
+        .etiket {
+            display: inline-block;
+            margin: 15px 0;
+            padding: 8px 14px;
+            border-radius: 20px;
+            background: #203451;
+            color: #b9d4ff;
+            font-size: 13px;
         }
 
         .indir {
-            display: inline-block;
-            margin-top: 22px;
-            padding: 17px 27px;
-            background: #18c878;
-            color: #06170e;
+            display: block;
+            margin: 25px auto 12px;
+            padding: 18px;
+            max-width: 350px;
+            border-radius: 12px;
+            background: #18d681;
+            color: #071b12;
             font-weight: bold;
             text-decoration: none;
-            border-radius: 12px;
+            transition: 0.2s;
         }
 
         .indir:hover {
-            background: #42e89a;
+            background: #48efa2;
+            transform: translateY(-2px);
+        }
+
+        .uyari {
+            color: #aab8cf;
+            font-size: 12px;
+            line-height: 1.7;
         }
 
         .bilgi {
             margin-top: 28px;
-            padding: 15px;
-            background: #0d1629;
-            border-radius: 12px;
-            color: #bdc9df;
-            line-height: 1.8;
+            padding: 18px;
+            border-radius: 14px;
+            background: #0b1425;
+            color: #cbd5e1;
+            line-height: 2;
+            text-align: left;
         }
 
         footer {
-            margin-top: 25px;
+            margin-top: 28px;
+            color: #8493aa;
             font-size: 12px;
-            color: #8392ad;
         }
     </style>
 </head>
 
 <body>
+
     <main class="kart">
 
         <div class="logo">MA</div>
@@ -97,24 +119,39 @@
         <h1>MA_KLAVYE</h1>
 
         <p class="aciklama">
-            Arduino destekli klavye projesi için
-            resmî indirme merkezine hoş geldin!
+            Kendi klavye projemize hoş geldin!<br>
+            Windows için MA_KLAVYE kurulum paketini
+            resmî indirme merkezimizden edinebilirsin.
         </p>
 
-        <div class="bilgi">
-            <strong>Windows desteği</strong><br>
-            Yardımcı program ve kurulum dosyaları<br>
-            Arduino UNO uyumluluğu
-        </div>
-<a class="indir"
-   href="https://github.com/mahmut-ui/ma-klavye-site/releases/latest/download/MA_KLAVYE_KURULUM.exe">
-    MA_KLAVYE'Yİ İNDİR 📥
-</a>
+        <span class="etiket">WINDOWS • SÜRÜM 1.0.0</span>
+
+        <a
+            class="indir"
+            href="https://github.com/mahmut-ui/ma-klavye-site/releases/latest/download/MA_KLAVYE_KURULUM.exe"
+        >
+            ⬇ MA_KLAVYE'Yİ İNDİR
+        </a>
+
+        <p class="uyari">
+            İndirme işlemi GitHub üzerinden gerçekleştirilir.<br>
+            İndirdiğin kurulum dosyasını yalnızca kaynağına
+            güvendiğinde çalıştır.
+        </p>
+
+        <section class="bilgi">
+            <strong>📦 Uygulama bilgileri</strong><br>
+            • Uygulama: MA_KLAVYE<br>
+            • Platform: Windows<br>
+            • Sürüm: 1.0.0<br>
+            • Yayıncı: MA_KLAVYE
+        </section>
 
         <footer>
-            MA_KLAVYE • Resmî İndirme Merkezi
+            © 2026 MA_KLAVYE • Resmî İndirme Merkezi
         </footer>
 
     </main>
+
 </body>
 </html>
